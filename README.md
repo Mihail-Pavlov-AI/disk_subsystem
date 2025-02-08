@@ -6,6 +6,6 @@
 ```
   mkdir ~/otus/
   cd ~/otus/
-  git clone
+  git clone https://github.com/Mihail-Pavlov-AI/disk_subsystem.git
 
 ```
