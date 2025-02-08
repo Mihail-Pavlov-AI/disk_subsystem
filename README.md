@@ -8,3 +8,9 @@
   cd ~/otus/
   git clone https://github.com/Mihail-Pavlov-AI/disk_subsystem.git
 ```
+Переходим в каталог и запускаем установку виртуальной машины, используем Vagrant файл.
+```
+ cd ~/otus/disk_subsystem
+ vagrant up
+```
+Будет установелна виртуальная машина с 5ю дисками для теста с рейдом.
