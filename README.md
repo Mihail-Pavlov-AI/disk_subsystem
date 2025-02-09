@@ -80,7 +80,12 @@ sudo parted /dev/md177 mkpart primary ext4 60% 80%
 sudo parted /dev/md177 mkpart primary ext4 80% 100%
 ```
 ![2025-02-09_18-27-55](https://github.com/user-attachments/assets/243281a7-1b2b-412a-aa33-45fa93d9c452)  
-
+```
+for i in $(seq 1 5); do sudo mkfs.ext4 /dev/md177p$i; done
+sudo mkdir /mnt/part{1..5}
+for i in $(seq 1 5); do sudo mount /dev/md177p$i /mnt/part$i; done
+```
+![2025-02-09_18-37-30](https://github.com/user-attachments/assets/681a3f25-96d5-4701-9427-e722474184dd)
 
 
 
