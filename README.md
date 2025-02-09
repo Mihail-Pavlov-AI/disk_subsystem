@@ -70,6 +70,15 @@ sudo mdadm -D /dev/md177
 ```
 
 Создаем GPT раздел, пять партиций и монтируем их на диск  
+```
+sudo umount /mnt/02
+sudo parted /dev/md177 mklabel gpt
+sudo parted /dev/md177 mkpart primary ext4 0% 20%
+sudo parted /dev/md177 mkpart primary ext4 20% 40%
+sudo parted /dev/md177 mkpart primary ext4 40% 60%
+sudo parted /dev/md177 mkpart primary ext4 60% 80%
+sudo parted /dev/md177 mkpart primary ext4 80% 100%
+```
 
 
 
