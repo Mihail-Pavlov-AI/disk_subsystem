@@ -79,6 +79,8 @@ sudo parted /dev/md177 mkpart primary ext4 40% 60%
 sudo parted /dev/md177 mkpart primary ext4 60% 80%
 sudo parted /dev/md177 mkpart primary ext4 80% 100%
 ```
+![2025-02-09_18-27-55](https://github.com/user-attachments/assets/243281a7-1b2b-412a-aa33-45fa93d9c452)  
+
 
 
 
