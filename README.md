@@ -63,6 +63,14 @@ sudo mdadm /dev/md177 --remove /dev/sdf
 mdadm -D /dev/md177
 ```
 ![2025-02-09_17-56-02](https://github.com/user-attachments/assets/3b576f74-d775-4342-ae0d-78f9d94e3793)  
+Добавим диск обратно в RAID
+```
+sudo mdadm /dev/md177 --add /dev/sdf
+sudo mdadm -D /dev/md177
+```
+
+Создаем GPT раздел, пять партиций и монтируем их на диск  
+
 
 
 
