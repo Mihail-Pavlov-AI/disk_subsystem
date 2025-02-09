@@ -39,4 +39,13 @@ sudo mdadm --create /dev/md177 -l 10 -n 4 /dev/sd{d..f} missing
 sudo mdadm -D /dev/md177
 ```
 ![raid10](https://github.com/user-attachments/assets/231ee3da-c76f-4473-9d64-62a16753576b)  
+```
+sudo mkfs.ext4 /dev/md177
+sudo mkdir /mnt/02
+sudo mount /dev/md177 /mnt/02
+sudo cp -r /mnt/01/* /mnt/02/
+ll /mnt/02
+```
+![2025-02-09_15-44-08](https://github.com/user-attachments/assets/4add38d4-6e7e-4cfe-87d6-6ba1463b23cf)  
+
 
