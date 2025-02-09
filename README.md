@@ -22,4 +22,5 @@
 ```
  lsblk  
 ```
+![lsblk](https://github.com/user-attachments/assets/7442d072-7f62-4554-920b-ba7fc88669b7)
 
