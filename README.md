@@ -33,4 +33,10 @@ sudo cp -r /var/log/* /mnt/01/
 ll /mnt/01/
 ```
 ![diskwith data](https://github.com/user-attachments/assets/f520cbd2-44f1-4dfb-912b-4753b8895f95)  
+Создадим RAID 10 из оставшихся 3х дисков, файловую систему, монтируем и переносим на него данные с первого диска.  
+```
+sudo mdadm --create /dev/md177 -l 10 -n 4 /dev/sd{d..f} missing
+sudo mdadm -D /dev/md177
+```
+![raid10](https://github.com/user-attachments/assets/231ee3da-c76f-4473-9d64-62a16753576b)  
 
