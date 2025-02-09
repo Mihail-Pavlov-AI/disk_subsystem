@@ -47,5 +47,6 @@ sudo cp -r /mnt/01/* /mnt/02/
 ll /mnt/02
 ```
 ![2025-02-09_15-44-08](https://github.com/user-attachments/assets/4add38d4-6e7e-4cfe-87d6-6ba1463b23cf)  
+Отмонтируем первый диск и добавим его в RAID 10
 
 
