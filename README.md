@@ -54,6 +54,6 @@ sudo mdadm /dev/md177 --add /dev/sdc
 sudo mdadm -D /dev/md177
 ```
 ![2025-02-09_17-40-04](https://github.com/user-attachments/assets/8849dc82-ffa6-4729-8074-e3efc9819d67)  
-
+Сломаем один диск в рейде, выведем его из RAID, добавим его обратно в RAID.  
 
 
