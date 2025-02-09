@@ -66,7 +66,7 @@ Vagrant.configure("2") do |config|
       vb.name = "ubuntu-22-04"
   end
 
-  (0..4).each do |i|
+  (0..3).each do |i|
       config.vm.disk :disk, size: "1GB", name: "disk-#{i}"
   end
 
